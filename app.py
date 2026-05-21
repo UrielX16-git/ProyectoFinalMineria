@@ -78,7 +78,7 @@ os.system('')
 # ══════════════════════════════════════════════════════════════════════════
 # CARGA DE DATOS
 # ══════════════════════════════════════════════════════════════════════════
-archivo = "Como influye escuchar música al estudiar.csv"
+archivo = "datos/Como influye escuchar música al estudiar.csv"
 if not os.path.exists(archivo):
     archivo = "/content/Como influye escuchar música al estudiar.csv"
 
@@ -720,5 +720,4 @@ print(f"""
 df.drop(columns=['_tiempo_num', '_busca_calma', '_menos_ansiedad'], inplace=True, errors='ignore')
 
 print(f"{Color.DIM}{'═' * 70}{Color.RESET}")
-print(f"{Color.DIM}  Fin del reporte. Proyecto Final de Minería de Datos.{Color.RESET}")
 print()
